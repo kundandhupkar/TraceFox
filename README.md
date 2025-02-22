@@ -145,7 +145,7 @@ This tool is intended for **ethical security research and reconnaissance**. Use 
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 

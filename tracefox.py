@@ -255,7 +255,7 @@ def get_robots_sitemap(domain):
 def scan_ports(domain):
     print(Fore.YELLOW + f"[INFO] Checking open ports & services for {domain}..." + Style.RESET_ALL, flush=True)
     try:
-        result = subprocess.run(["nmap", "-Pn", "-p-", domain], capture_output=True, text=True)
+        result = subprocess.run(["nmap", "-Pn", "--top-ports 1000", domain], capture_output=True, text=True)
         print(Fore.GREEN + f"[INFO] Completed: Checking open ports & services for {domain}.\n" + Style.RESET_ALL)
         return result.stdout
     except Exception as e:

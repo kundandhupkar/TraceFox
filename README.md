@@ -18,7 +18,7 @@ TraceFox is a **OSINT (Open Source Intelligence) Tool** that automates domain in
 - **Subdomain Enumeration** - Find subdomains using `crt.sh`.
 - **Blacklist Check** - Verify if the domain is flagged as malicious.
 - **Robots.txt & Sitemap.xml** - Retrieve these files if available.
-- **Port Scanning** - Check open ports and running services.
+- **Port Scanning** - Scans top 1000 ports for open ports and running services.
 - **Hosting & ASN Info** - Identify the hosting provider and ASN details.
 - **Server Headers** - Extract server response headers.
 
@@ -98,7 +98,7 @@ options:
   --subdomains          Run subdomains lookup
   --blacklist           Run blacklist lookup
   --robomap             Run robomap lookup
-  --ports               Run ports lookup
+  --ports               Run ports lookup(top 1000 ports only)
   --hosting             Run hosting lookup
   --headers             Run headers lookup
 ```

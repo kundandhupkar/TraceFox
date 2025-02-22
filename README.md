@@ -5,6 +5,8 @@
 ## 📌 About
 TraceFox is a **OSINT (Open Source Intelligence) Tool** that automates domain information gathering by fetching WHOIS data, subdomains, DNS records, technology stack, breached credentials, and more. It is optimized for **Linux** and runs multiple scans in parallel for efficiency.
 
+---
+
 ## 🚀 Features
 - **WHOIS Lookup** - Get domain registration details.
 - **IP Address Resolution** - Fetch the IP address of the domain.
@@ -20,7 +22,30 @@ TraceFox is a **OSINT (Open Source Intelligence) Tool** that automates domain in
 - **Hosting & ASN Info** - Identify the hosting provider and ASN details.
 - **Server Headers** - Extract server response headers.
 
+---
+
 ## 🛠 Installation
+
+### **Prerequisites**
+- **Linux OS** (Ubuntu, Debian, Kali, etc.)
+- Python 3 installed (`python3 --version` to check)
+
+### **Step 1: Clone the Repository**
+```bash
+git clone https://github.com/kundandhupkar/TraceFox.git
+cd TraceFox
+```
+
+### **Step 2: Install Dependencies**
+Run the setup script to install all required packages and system dependencies:
+```bash
+python3 install.py
+```
+This will:
+- Install Python dependencies (`requests`, `colorama`).
+- Install required Linux tools (`whois`, `openssl`, `dig`, `nmap`).
+- Make the tool globally accessible as `tracefox`.
+
 ### **API Key Setup**
 Before using the tool, you need to add API keys for **VirusTotal** and **BuiltWith**. 
 
@@ -42,25 +67,7 @@ Before using the tool, you need to add API keys for **VirusTotal** and **BuiltWi
 
 Ensure these keys are correctly set before running the tool.
 
-### **Prerequisites**
-- **Linux OS** (Ubuntu, Debian, Kali, etc.)
-- Python 3 installed (`python3 --version` to check)
-
-### **Step 1: Clone the Repository**
-```bash
-git clone https://github.com/kundandhupkar/TraceFox.git
-cd TraceFox
-```
-
-### **Step 2: Install Dependencies**
-Run the setup script to install all required packages and system dependencies:
-```bash
-python3 install.py
-```
-This will:
-- Install Python dependencies (`requests`, `colorama`).
-- Install required Linux tools (`whois`, `openssl`, `dig`, `nmap`).
-- Make the tool globally accessible as `tracefox`.
+---
 
 ## 🎯 Usage
 ### **Help Menu**
@@ -125,21 +132,27 @@ tracefox -f domains.txt -a
 tracefox -d example.com -o report.txt
 ```
 
+---
+
 ## 📂 Output Format
 The tool generates structured reports in **TXT format** with organized sections for each scanned domain.
+
+---
 
 ## ⚠️ Disclaimer
 This tool is intended for **ethical security research and reconnaissance**. Use only on domains you have permission to scan. Misuse may violate laws and terms of service.
 
+---
+
 ## 📜 License
 This project is licensed under the **MIT License**.
+
+---
 
 ## 🌟 Contributions
 Contributions are welcome! Feel free to submit pull requests or report issues.
 
+---
+
 ## 📞 Contact
 For suggestions or issues, open a GitHub issue or contact me at **dhupkarkundan@gmail.com**.
-
-
-
-

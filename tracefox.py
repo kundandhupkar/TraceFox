@@ -288,8 +288,8 @@ def get_hosting_asn_info(domain):
                 "city": data.get("city", "N/A"),
                 "region": data.get("region", "N/A"),
                 "country": data.get("country", "N/A"),
-                "asn": asn,  # Now correctly extracted
-                "org": hosting_provider  # Hosting provider without ASN
+                "asn": asn,  
+                "org": hosting_provider  
             }
             print(Fore.GREEN + f"[INFO] Completed: Fetching hosting information for {domain}.\n" + Style.RESET_ALL)
             return hosting_info
@@ -338,9 +338,9 @@ def report_generation(domain, data, output_filename=None):
     filename = output_filename if output_filename else f"osint_report_{domain}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 
     with open(filename, "a") as f:
-        max_width = max(len(section) for section in data.keys()) + 6  # Adjust padding
+        max_width = max(len(section) for section in data.keys()) + 6  
         for section, content in data.items():
-            box_width = max_width + 10  # Extra padding for uniformity
+            box_width = max_width + 10  
             border_line = "█" * box_width
             section_line = f"█  {section.upper().center(box_width - 6)}  █"
 
